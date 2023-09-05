@@ -8,7 +8,7 @@
   - [Make и друзья](build_systems/make.md)
   - [CMake](build_systems/cmake.md)
 
-- [Инструменты разработки](dev_tools/dev_tools.md)
+- [Инструменты разработки]()
   - [Кор дампы]()
   - [clangd]()
   - [clang-format]()
