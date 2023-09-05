@@ -12,4 +12,4 @@
   - [Кордампы](dev_tools/core_dumps.md)
   - [clangd]()
   - [clang-format]()
-  - [clang-dity]()
+  - [clang-tidy]()
