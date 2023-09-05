@@ -5,10 +5,11 @@
   - [Санитайзеры](compilation/sanitizers.md)
 
 - [Сборочные системы](build_systems/build_systems.md)
-  - [Make](build_systems/make.md)
+  - [Make и друзья](build_systems/make.md)
+  - [CMake](build_systems/cmake.md)
 
 - [Инструменты разработки](dev_tools/dev_tools.md)
-  - [clangd](dev_tools/clangd.md)
-  - [clang-format](dev_tools/clang-format.md)
-  - [clang-dity](dev_tools/clang-tidy.md)
-  - [Прости господи VSCode](dev_tools/vscode.md)
+  - [Кор дампы]()
+  - [clangd]()
+  - [clang-format]()
+  - [clang-dity]()
