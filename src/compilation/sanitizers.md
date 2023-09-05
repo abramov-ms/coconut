@@ -18,7 +18,7 @@
 clang, я оставлю ссылки на clang. Наиболее полезные &mdash;
 [AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html) (ASan),
 [UndefinedBehaviorSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
-(UBSan) и [ThreadSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html)
+(UBSan) и [ThreadSanitizer](https://clang.llvm.org/docs/ThreadSanitizer.html)
 (TSan). ASan проверяет, что нет утечек и обращений к освобожденной памяти.
 UBSan, &mdash; что нет UB (например, переполнения знаковых интов, невыровненных
 обращений к памяти и т.д.). TSan проверяет корректность многопоточных программ,
