@@ -6,3 +6,4 @@ src = "src"
 
 [output.html]
 default-theme = "rust"
+preferred-dark-theme = "ayu"
