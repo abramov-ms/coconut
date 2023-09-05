@@ -1,6 +1,8 @@
 [book]
 title = "🥥 coconut"
-authors = []
 language = "ru"
 multilingual = false
 src = "src"
+
+[output.html]
+default-theme = "rust"
