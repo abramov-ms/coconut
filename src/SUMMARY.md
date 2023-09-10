@@ -13,3 +13,9 @@
   - [clangd]()
   - [clang-format]()
   - [clang-tidy]()
+
+- [Представление чисел и кодировки](coding/coding.md)
+  - [Целые числа](coding/ints.md)
+  - [Числа с фиксированной точкой](coding/fixed_point.md)
+  - [Числа с плавающей точкой](coding/floating_point.md)
+  - [Юникод]()
