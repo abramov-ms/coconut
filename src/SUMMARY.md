@@ -18,4 +18,5 @@
   - [Целые числа](coding/ints.md)
   - [Числа с фиксированной точкой](coding/fixed_point.md)
   - [Числа с плавающей точкой](coding/floating_point.md)
+  - [Арифметика флоатов](coding/float_math.md)
   - [Юникод]()
