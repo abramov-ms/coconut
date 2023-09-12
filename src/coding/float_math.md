@@ -547,7 +547,7 @@ static __inline fp_t __addXf3__(fp_t a, fp_t b) {
 M_2)e(E_1 - E_2) \\), поэтому надо поделить мантиссы и вычесть экспоненты. На
 практике делить мантиссы не так-то просто. Это можно делать, как вы писали в
 задаче `BigInteger`/`Rational`. Либо можно использовать более быстрое [деление
-Ньютона-Рапсона](https://en.wikipedia.org/wiki/Division_algorithm#Newton-Raphson_division).
+Ньютона-Рапсона](https://en.wikipedia.org/wiki/Division_algorithm#Newton%E2%80%93Raphson_division).
 Чтобы вычислить \\( x \\,/\\, y \\) сначала [методом
 Ньютона](https://en.wikipedia.org/wiki/Newton%27s_method) находят \\( 1 \\,/\\,
 y \\) как корень функции \\( f(t) = 1 \\,/\\, t -  y \\). Потом полученное
