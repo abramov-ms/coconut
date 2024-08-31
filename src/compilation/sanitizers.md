@@ -15,12 +15,12 @@
 [здесь](https://github.com/google/sanitizers/wiki/).
 
 Есть более-менее стандартный набор санитайзеров, которые поддерживаются в gcc и
-clang, я оставлю ссылки на clang. Наиболее полезные &mdash;
+clang, я оставлю ссылки на clang. Наиболее полезные ---
 [AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html) (ASan),
 [UndefinedBehaviorSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
 (UBSan) и [ThreadSanitizer](https://clang.llvm.org/docs/ThreadSanitizer.html)
 (TSan). ASan проверяет, что нет утечек и обращений к освобожденной памяти.
-UBSan, &mdash; что нет UB (например, переполнения знаковых интов, невыровненных
+UBSan, --- что нет UB (например, переполнения знаковых интов, невыровненных
 обращений к памяти и т.д.). TSan проверяет корректность многопоточных программ,
 это совсем другая история.
 
@@ -60,7 +60,7 @@ SUMMARY: AddressSanitizer: 1024 byte(s) leaked in 1 allocation(s).
 UBSan, нужно передать клангу флаг `-fsanitize=address,undefined`.
 
 Код с санитайзерами работает медленее. Например, ASan своими проверками
-замедляет программу примерно в 2 раза, а TSan &mdash; в 5-10 раз. Тем не менее,
+замедляет программу примерно в 2 раза, а TSan --- в 5-10 раз. Тем не менее,
 это очень полезные инструменты, без которых тяжело жить.
 
 > Еще есть [MemorySanitizer](https://clang.llvm.org/docs/MemorySanitizer.html),
