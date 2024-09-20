@@ -9,3 +9,4 @@ default-theme = "rust"
 preferred-dark-theme = "ayu"
 mathjax-support = true
 smart-punctuation = true
+additional-js = ["themes.js"]
