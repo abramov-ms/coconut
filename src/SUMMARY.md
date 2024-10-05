@@ -20,3 +20,5 @@
   - [Числа с плавающей точкой](coding/floating_point.md)
   - [Арифметика флоатов](coding/float_math.md)
   - [Юникод]()
+
+- [Ассемблер x86](x86asm/x86asm.md)
