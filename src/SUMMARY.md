@@ -24,4 +24,5 @@
 - [Ассемблер x86](x86asm/x86asm.md)
   - [Ассемблер и дизассемблер](x86asm/asm_compilation.md)
   - [Инструкции, типы операндов](x86asm/instructions.md)
+  - [Стек и вызовы функций](x86asm/function_calls.md)
   - [Intel vs. AT&T](x86asm/intel_vs_att.md)
