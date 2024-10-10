@@ -88,7 +88,7 @@ offset]` (все, кроме `base` --- опциональное). Чтобы е
 1. доступ к памяти,
 1. арифметика и логика,
 1. прыжки между адресами и метками в коде.
-1. стек и вызовы функций.
+1. вызовы функций.
 
 ## Доступ в память
 
@@ -107,7 +107,6 @@ offset]` (все, кроме `base` --- опциональное). Чтобы е
 | `mov dword ptr [rax], 52 ` | Записать 52 (`uint32_t`) по адресу `rax`. |
 | `mov qword ptr [rax], 52 ` | Записать 52 (`uint64_t`) по адресу `rax`. |
 
-
 При записи констант в память нужно явно указывать тип адреса
 (`byte/word/dword/qword ptr`), поскольку результат операции будет разным.
 Например, `mov byte ptr [rax], 52` запишет единственный байт `0x34`, а `mov
@@ -124,6 +123,15 @@ dword ptr [rax], 52` --- байт `0x34` и после еще три нулев�
 mov rax, [rbx]
 mov [rcx], rax
 ```
+
+Также есть инструкции [`push`](https://www.felixcloutier.com/x86/push) и
+[`pop`](https://www.felixcloutier.com/x86/push), которые позволяют работать со
+стеком.
+
+| Пример | Смысл |
+| --- | --- |
+| `push rax` | Записать `rax` на стек. |
+| `pop rax` | Снять значение с верхушки стека и записать его в `rax`. |
 
 ### Вычисление адресов
 
@@ -239,6 +247,6 @@ SRC`](https://www.felixcloutier.com/x86/cmp). Флаги будут такими
 | Си | Ассемблер x86 |
 | --- | --- |
 | <pre><code class="language-c hljs">if (rax <= 13) {<br>  rbx = 52;<br>}<br></code></pre> | <pre><code class="language-x86asm hljs">  cmp rax, 13<br>  jg .Lfalse_branch<br><br>.Ltrue_branch:<br>  mov rbx, 52<br><br>.Lfalse_branch:<br>  ...</code></pre> |
-| <pre><code class="language-c hljs">int rax = 0;<br>for (int rcx = 0; rcx < 128; ++rcx) {<br>  rax += rcx;<br>}</code></pre> | <pre><code class="language-x86asm" hljs>  mov eax, 0<br>  mov ecx, 0<br><br>.Lloop_body:<br>  add eax, ecx<br>  inc ecx<br><br>  cmp ecx, 128<br>  jl .Lloop_body</code></pre> |
+| <pre><code class="language-c hljs">int eax = 0;<br>for (int ecx = 0; ecx < 128; ++ecx) {<br>  eax += ecx;<br>}</code></pre> | <pre><code class="language-x86asm" hljs>  mov eax, 0<br>  mov ecx, 0<br><br>.Lloop_body:<br>  add eax, ecx<br>  inc ecx<br><br>  cmp ecx, 128<br>  jl .Lloop_body</code></pre> |
 | <pre><code class="language-c hljs">while (true) {<br>}</code></pre> | <pre><code class="language-x86asm hljs">.Linfinite_loop<br>  jmp .Linfinite_loop</code></pre> |
 
